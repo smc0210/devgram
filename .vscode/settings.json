@@ -1,3 +1,5 @@
 {
-    "python.linting.pylintEnabled": false
+    "python.linting.pylintEnabled": true,
+    "python.pythonPath": "/Users/smc/.local/share/virtualenvs/devgram-usbs82sJ/bin/python",
+    "python.linting.enabled": true,
 }
