@@ -1,19 +1,57 @@
-pytz==2018.4  # https://github.com/stub42/pytz
-awesome-slugify==1.6.5  # https://github.com/dimka665/awesome-slugify
-Pillow==5.1.0  # https://github.com/python-pillow/Pillow
-argon2-cffi==18.1.0  # https://github.com/hynek/argon2_cffi
-whitenoise==3.3.1  # https://github.com/evansd/whitenoise
-redis>=2.10.5  # https://github.com/antirez/redis
+# Wheel 0.25+ needed to install certain packages on CPython 3.5+
+# like Pillow and psycopg2
+# See http://bitly.com/wheel-building-fails-CPython-35
+# Verified bug on Python 3.5.1
+wheel==0.30.0
 
-# Django
-# ------------------------------------------------------------------------------
-django==2.0.4  # pyup: < 2.1  # https://www.djangoproject.com/
-django-environ==0.4.4  # https://github.com/joke2k/django-environ
-django-model-utils==3.1.1  # https://github.com/jazzband/django-model-utils
-django-allauth==0.35.0  # https://github.com/pennersr/django-allauth
-django-crispy-forms==1.7.2  # https://github.com/django-crispy-forms/django-crispy-forms
-django-redis==4.9.0  # https://github.com/niwinz/django-redis
 
-# Django REST Framework
-djangorestframework==3.8.2  # https://github.com/encode/django-rest-framework
-coreapi==2.3.3  # https://github.com/core-api/python-client
+# Bleeding edge Django
+django==1.10.8 # pyup: >=1.10,<1.11
+
+# Configuration
+django-environ==0.4.4
+
+
+
+# Forms
+django-crispy-forms==1.6.1
+
+# Models
+django-model-utils==3.0.0
+
+# Images
+Pillow==4.2.1
+
+# Password storage
+argon2-cffi==16.3.0
+
+# For user registration, either via email or social
+# Well-built with regular release cycles!
+django-allauth==0.33.0
+
+
+# Python-PostgreSQL Database Adapter
+psycopg2==2.7.3.1
+
+# Unicode slugification
+awesome-slugify==1.6.5
+
+# Time zones support
+pytz==2017.2
+
+# Redis support
+django-redis==4.8.0
+redis>=2.10.5
+
+
+
+
+
+# Your custom requirements go here
+djangorestframework==3.7.3
+djangorestframework-jwt==1.11.0
+django-cors-headers==2.1.0
+django-rest-auth==0.9.2
+django-taggit==0.22.1
+django-taggit-serializer==0.1.5
+django-imagekit==4.0.2
