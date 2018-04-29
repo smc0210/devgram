@@ -19,6 +19,10 @@ urlpatterns = [
         r"^users/",
         include("devgram.users.urls", namespace="users"),
     ),
+    url(
+        r"^images/",
+        include("devgram.images.urls", namespace="images"),
+    ),
     url(r"^accounts/", include("allauth.urls")),
     # Your stuff: custom urls includes go here
 ] + static(
